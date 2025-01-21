@@ -1,0 +1,29 @@
+{
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "editor.minimap.enabled": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "workbench.activityBar.location": "hidden",
+  "workbench.tree.renderIndentGuides": "none",
+  "explorer.openEditors.visible": 0,
+  "explorer.decorations.colors": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "window.menuBarVisibility": "toggle",
+  "workbench.layoutControl.type": "menu",
+  "workbench.layoutControl.enabled": false,
+  "window.title": " ",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#FFFDF0",
+    "terminalCursor.foreground": "#FFFDF0"
+  },
+  "editor.fontSize": 12,
+  "security.workspace.trust.untrustedFiles": "open",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "editor.lineNumbers": "relative",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+}
