@@ -1,0 +1,77 @@
+% Created 2025-02-04 mar. 11:33
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{Emacs notes}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Emacs notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.7.19)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Basics}
+\label{sec:org7f7682e}
+To restart the deamon :
+\begin{verbatim}
+systemctl restart --user emacs
+\end{verbatim}
+\subsection{File managment and project :}
+\label{sec:org090f311}
+SPC + f : File managment
+SPC + p : project managment
+
+SPC + . : Find file
+
+We can work on the context of a project using projectile (pre-installed in doom)
+M - x : projectile-discover-project-in-directory : Permet d'automatiquement identifié les projects (recursivement depuis une root)
+ajouter un .projectile à la racine d'un directory permet de le definir comme un project
+
+SPC + p + p : permet de lister tous les projects.
+\subsection{Buffers :}
+\label{sec:org035acf5}
+\begin{quote}
+Les plus utiles
+\end{quote}
+SPC + b : pour intéragir avec les buffers
+SPC + b + b : changer de buffer simplement en fonction du nom
+SPC + b + i ; intéraction avec les buffers (Del)
+
+SPC + b + i ; intéraction avec les buffers (Del)
+\section{Agenda}
+\label{sec:orgc411d42}
+Il faut spécifier dans quel directory notre org-agenda va regarder. Pour ma part : \textasciitilde{}/Documents/org/
+Ensuite, voici comment rajouter des tâches :
+
+\#+begin\textsubscript{quote}
+\subsubsection{{\bfseries\sffamily TODO} Complete this task eventually}
+\label{sec:org604dbdf}
+
+\subsubsection{{\bfseries\sffamily TODO} Complete this task by September 30th}
+\label{sec:org0f6b3be}
+\subsubsection{{\bfseries\sffamily TODO} Start this task on September 30th.}
+\label{sec:org336d922}
+\#+end\textsubscript{quote}
+\section{Utils}
+\label{sec:org5165c13}
+\subsection{Notes :}
+\label{sec:org6e6bfe3}
+En org-mode, on peut utiliser C-c C-e pour pouvoir convertir notre fichier ne divers format.
+On peut donc facilement avoir une preview de nos documents
+\end{document}
