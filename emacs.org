@@ -1,0 +1,56 @@
+#+title: Emacs notes
+
+* Basics
+To restart the deamon :
+#+BEGIN_SRC bash
+systemctl restart --user emacs
+#+END_SRC
+
+** File managment and project
+SPC + f : File managment
+SPC + p : project managment
+
+SPC + . : Find file
+
+We can work on the context of a project using projectile (pre-installed in doom)
+M - x : projectile-discover-project-in-directory : Permet d'automatiquement identifié les projects (recursivement depuis une root)
+ajouter un .projectile à la racine d'un directory permet de le definir comme un project
+
+SPC + p + p : permet de lister tous les projects.
+
+** Buffers
+#+begin_quote
+Les plus utiles
+#+end_quote
+SPC + b : pour intéragir avec les buffers
+SPC + b + b : changer de buffer simplement en fonction du nom
+SPC + b + i ; intéraction avec les buffers (Del)
+
+SPC + b + i ; intéraction avec les buffers (Del)
+
+** Navigation
+Tout se fait par SPC + w
+Pour naviger entre les fenêtres :
++ SPC + w + v : Virtual split sur le buffer actuel
++ SPC + w + h|j|k|l : Pour naviger entre nos split
+* Org-mode
+Mode spécifique à Emacs qui permet de faire pleins de trucs.
+Menu org : C-c
+
+En org-mode, on peut utiliser C-c C-e pour pouvoir convertir notre fichier ne divers format.
+On peut donc facilement avoir une preview de nos documents
+
+* Agenda
+Pour ouvrir l'agenda SPC + o + A
+
+Il faut spécifier dans quel directory notre org-agenda va regarder. Pour ma part : ~/Documents/org/
+Ensuite, voici comment rajouter des tâches :
+
+#+TODO: TODO IN-PROGRESS | DONE
+#+begin_quote
+Voir ~/Documents/org/personal.org pour la synthaxe
+  #+end_quote
+
+On peut ajouter des priorisations des tâches avec des tag après la tache [#A|B|C...]
+On peut ajouter un rappel, en ajoutant -Xd Pour un rappel X jours avant la deadline préciser.
+On peut ajouter une heure an ajoutant HH:MM après notre date de deadline
