@@ -28,11 +28,16 @@ SPC + b + i ; intéraction avec les buffers (Del)
 
 SPC + b + i ; intéraction avec les buffers (Del)
 
-** Navigation
+** Navigatin
 Tout se fait par SPC + w
 Pour naviger entre les fenêtres :
 + SPC + w + v : Virtual split sur le buffer actuel
 + SPC + w + h|j|k|l : Pour naviger entre nos split
+
+** Others
+SPC + h + f : trouver l'utiliter des fonctions (ex : ibuffer)
+SPC + h + v : trouver l'utiliter des variables (ex : pour la config)
+
 * Org-mode
 Mode spécifique à Emacs qui permet de faire pleins de trucs.
 Menu org : C-c
